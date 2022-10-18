@@ -16,7 +16,7 @@ app.use(bodyParser.json());
 
 
 mongoose.connect(process.env.MONGO_DB).then((result)=>
-    app.listen(process.env.PORT, (req,res)=>{
+    app.listen(process.env.PORT || 5000, (req,res)=>{
         console.log(`mongo connected, listenning on port: ${PORT}`)
     }))
   .catch((err) => console.log(err, 'mongo not connected'));
