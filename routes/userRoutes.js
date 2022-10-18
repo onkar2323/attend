@@ -7,7 +7,7 @@ router.get('/', (req,res)=>{
 })
  
 router.get('/', (req,res)=>{
-    res.send('working')
+    return res.send('working')
 })
 router.post('/signup', userController.signup);
  
