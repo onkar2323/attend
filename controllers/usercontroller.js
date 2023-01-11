@@ -1,7 +1,6 @@
 const User = require('../models/userModel');
 const jwt = require('jsonwebtoken');
 const bcrypt = require('bcrypt');
-const { roles } = require('../roles.js')
  
 
 async function hashPassword(password) {
